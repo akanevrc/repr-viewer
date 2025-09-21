@@ -1,22 +1,20 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: #ccc;
-  background-color: #222;
+:root {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+  --color-white: #fce;
+  --color-black: #101;
+  color: var(--color-white);
+  background-color: var(--color-black);
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 320px;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #222;
-    background-color: #ccc;
-  }
 }
