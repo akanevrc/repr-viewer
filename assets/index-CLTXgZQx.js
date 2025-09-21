@@ -16,7 +16,7 @@ var __privateMethod = (obj, member, method) => (__accessCheck(obj, member, "acce
 var require_stdin = __commonJS({
   "<stdin>"(exports, module) {
     (async () => {
-      var _l2, _t2, _c, _i, _f, _s2, _n2, _e2, _r2, _a, __, _u, _Ee_instances, v_fn, o_fn, d_fn, _l3, _t3, _c2, _i2, _f2, _s3, _n3, _e3, _r3, _a2, __2, _u2, _v, _o, _d, _g, _Nr_instances, y_fn, w_fn, h_fn, p_fn, b_fn, _a3;
+      var _l2, _t2, _c, _i, _f, _s2, _n2, _e2, _r2, _a, __, _u, _Ee_instances, v_fn, o_fn, d_fn, _l3, _t3, _c2, _i2, _f2, _s3, _n3, _e3, _r3, _a2, __2, _u2, _v, _o, _d, _g, _Nr_instances, w_fn, y_fn, h_fn, p_fn, b_fn, _a3;
       (function() {
         const t = document.createElement("link").relList;
         if (t && t.supports && t.supports("modulepreload")) return;
@@ -95,7 +95,7 @@ var require_stdin = __commonJS({
       function bn(e) {
         return !gr(e, this.v);
       }
-      let yr = false, ve = null;
+      let wr = false, ve = null;
       function Je(e) {
         ve = e;
       }
@@ -109,7 +109,7 @@ var require_stdin = __commonJS({
           l: null
         };
       }
-      function yn(e) {
+      function wn(e) {
         var t = ve, n = t.e;
         if (n !== null) {
           t.e = null;
@@ -117,7 +117,7 @@ var require_stdin = __commonJS({
         }
         return ve = t.p, {};
       }
-      function wn() {
+      function yn() {
         return true;
       }
       let Ne = [], Tt = [];
@@ -125,7 +125,7 @@ var require_stdin = __commonJS({
         var e = Ne;
         Ne = [], dn(e);
       }
-      function wr() {
+      function yr() {
         var e = Tt;
         Tt = [], dn(e);
       }
@@ -142,7 +142,7 @@ var require_stdin = __commonJS({
         Ne.push(e);
       }
       function xr() {
-        Ne.length > 0 && mn(), Tt.length > 0 && wr();
+        Ne.length > 0 && mn(), Tt.length > 0 && yr();
       }
       const Er = /* @__PURE__ */ new WeakMap();
       function xn(e) {
@@ -476,7 +476,7 @@ var require_stdin = __commonJS({
       _d = new WeakMap();
       _g = new WeakMap();
       _Nr_instances = new WeakSet();
-      y_fn = function() {
+      w_fn = function() {
         try {
           __privateSet(this, _n3, ue(() => __privateGet(this, _f2).call(this, __privateGet(this, _t3))));
         } catch (t) {
@@ -484,7 +484,7 @@ var require_stdin = __commonJS({
         }
         __privateSet(this, _l3, false);
       };
-      w_fn = function() {
+      y_fn = function() {
         const t = __privateGet(this, _i2).pending;
         t && (__privateSet(this, _e3, ue(() => t(__privateGet(this, _t3)))), Ee.enqueue(() => {
           __privateSet(this, _n3, __privateMethod(this, _Nr_instances, h_fn).call(this, () => (Ee.ensure(), ue(() => __privateGet(this, _f2).call(this, __privateGet(this, _t3)))))), __privateGet(this, _u2) > 0 ? __privateMethod(this, _Nr_instances, p_fn).call(this) : (Xe(__privateGet(this, _e3), () => {
@@ -637,7 +637,7 @@ var require_stdin = __commonJS({
       }
       function An(e) {
         var t = zt(e);
-        if (e.equals(t) || (e.v = t, e.wv = Vn()), !yt) {
+        if (e.equals(t) || (e.v = t, e.wv = Vn()), !wt) {
           var n = (Re || (e.f & _e) !== 0) && e.deps !== null ? Pe : V;
           X(e, n);
         }
@@ -654,7 +654,7 @@ var require_stdin = __commonJS({
         };
         return n;
       }
-      function ye(e, t) {
+      function we(e, t) {
         const n = We(e);
         return jn(n), n;
       }
@@ -663,14 +663,14 @@ var require_stdin = __commonJS({
         return t || (r.equals = bn), r;
       }
       function Z(e, t, n = false) {
-        g !== null && (!fe || (g.f & nn) !== 0) && wn() && (g.f & (J | tt | Ht | nn)) !== 0 && !(Se == null ? void 0 : Se.includes(e)) && or();
+        g !== null && (!fe || (g.f & nn) !== 0) && yn() && (g.f & (J | tt | Ht | nn)) !== 0 && !(Se == null ? void 0 : Se.includes(e)) && or();
         let r = n ? ut(t) : t;
         return ht(e, r);
       }
       function ht(e, t) {
         if (!e.equals(t)) {
           var n = e.v;
-          yt ? Oe.set(e, t) : Oe.set(e, n), e.v = t;
+          wt ? Oe.set(e, t) : Oe.set(e, n), e.v = t;
           var r = Ee.ensure();
           r.capture(e, n), (e.f & J) !== 0 && ((e.f & se) !== 0 && zt(e), X(e, (e.f & _e) === 0 ? V : Pe)), e.wv = Vn(), Cn(e, se), m !== null && (m.f & V) !== 0 && (m.f & (Fe | Ye)) === 0 && (ne === null ? zr([
             e
@@ -692,19 +692,19 @@ var require_stdin = __commonJS({
         if (typeof e != "object" || e === null || _t in e) return e;
         const t = er(e);
         if (t !== Jn && t !== Qn) return e;
-        var n = /* @__PURE__ */ new Map(), r = Nt(e), s = ye(0), l = Be, i = (o) => {
+        var n = /* @__PURE__ */ new Map(), r = Nt(e), s = we(0), l = Be, i = (o) => {
           if (Be === l) return o();
           var a = g, u = Be;
           G(null), fn(l);
           var c = o();
           return G(a), fn(u), c;
         };
-        return r && n.set("length", ye(e.length)), new Proxy(e, {
+        return r && n.set("length", we(e.length)), new Proxy(e, {
           defineProperty(o, a, u) {
             (!("value" in u) || u.configurable === false || u.enumerable === false || u.writable === false) && ir();
             var c = n.get(a);
             return c === void 0 ? c = i(() => {
-              var p = ye(u.value);
+              var p = we(u.value);
               return n.set(a, p), p;
             }) : Z(c, u.value, true), true;
           },
@@ -712,7 +712,7 @@ var require_stdin = __commonJS({
             var u = n.get(a);
             if (u === void 0) {
               if (a in o) {
-                const c = i(() => ye(U));
+                const c = i(() => we(U));
                 n.set(a, c), vt(s);
               }
             } else Z(u, U), vt(s);
@@ -723,7 +723,7 @@ var require_stdin = __commonJS({
             if (a === _t) return e;
             var c = n.get(a), p = a in o;
             if (c === void 0 && (!p || ((_a4 = ft(o, a)) == null ? void 0 : _a4.writable)) && (c = i(() => {
-              var h = ut(p ? o[a] : U), d = ye(h);
+              var h = ut(p ? o[a] : U), d = we(h);
               return d;
             }), n.set(a, c)), c !== void 0) {
               var v = _(c);
@@ -753,7 +753,7 @@ var require_stdin = __commonJS({
             var u = n.get(a), c = u !== void 0 && u.v !== U || Reflect.has(o, a);
             if (u !== void 0 || m !== null && (!c || ((_a4 = ft(o, a)) == null ? void 0 : _a4.writable))) {
               u === void 0 && (u = i(() => {
-                var v = c ? ut(o[a]) : U, h = ye(v);
+                var v = c ? ut(o[a]) : U, h = we(v);
                 return h;
               }), n.set(a, u));
               var p = _(u);
@@ -766,9 +766,9 @@ var require_stdin = __commonJS({
             var p = n.get(a), v = a in o;
             if (r && a === "length") for (var h = u; h < p.v; h += 1) {
               var d = n.get(h + "");
-              d !== void 0 ? Z(d, U) : h in o && (d = i(() => ye(U)), n.set(h + "", d));
+              d !== void 0 ? Z(d, U) : h in o && (d = i(() => we(U)), n.set(h + "", d));
             }
-            if (p === void 0) (!v || ((_a4 = ft(o, a)) == null ? void 0 : _a4.writable)) && (p = i(() => ye(void 0)), Z(p, ut(u)), n.set(a, p));
+            if (p === void 0) (!v || ((_a4 = ft(o, a)) == null ? void 0 : _a4.writable)) && (p = i(() => we(void 0)), Z(p, ut(u)), n.set(a, p));
             else {
               v = p.v !== U;
               var b = i(() => ut(u));
@@ -777,8 +777,8 @@ var require_stdin = __commonJS({
             var x = Reflect.getOwnPropertyDescriptor(o, a);
             if ((x == null ? void 0 : x.set) && x.set.call(c, u), !v) {
               if (r && typeof a == "string") {
-                var I = n.get("length"), y = Number(a);
-                Number.isInteger(y) && y >= I.v && Z(I, y + 1);
+                var I = n.get("length"), w = Number(a);
+                Number.isInteger(w) && w >= I.v && Z(I, w + 1);
               }
               vt(s);
             }
@@ -955,7 +955,7 @@ var require_stdin = __commonJS({
       function In(e) {
         var t = e.teardown;
         if (t !== null) {
-          const n = yt, r = g;
+          const n = wt, r = g;
           un(true), G(null);
           try {
             t.call(null);
@@ -1039,9 +1039,9 @@ var require_stdin = __commonJS({
       function on(e) {
         ze = e;
       }
-      let yt = false;
+      let wt = false;
       function un(e) {
-        yt = e;
+        wt = e;
       }
       let g = null, fe = false;
       function G(e) {
@@ -1110,7 +1110,7 @@ var require_stdin = __commonJS({
             else e.deps = h = $;
             if (!Re || (c & J) !== 0 && e.reactions !== null) for (d = z; d < h.length; d++) ((_a4 = h[d]).reactions ?? (_a4.reactions = [])).push(e);
           } else h !== null && z < h.length && (Ct(e, z), h.length = z);
-          if (wn() && ne !== null && !fe && h !== null && (e.f & (J | Pe | se)) === 0) for (d = 0; d < ne.length; d++) Wn(ne[d], e);
+          if (yn() && ne !== null && !fe && h !== null && (e.f & (J | Pe | se)) === 0) for (d = 0; d < ne.length; d++) Wn(ne[d], e);
           return s !== null && s !== e && (pt++, ne !== null && (r === null ? r = ne : r.push(...ne))), (e.f & je) !== 0 && (e.f ^= je), v;
         } catch (b) {
           return xn(b);
@@ -1144,7 +1144,7 @@ var require_stdin = __commonJS({
             var s = Yn(e);
             e.teardown = typeof s == "function" ? s : null, e.wv = Bn;
             var l;
-            vn && yr && (e.f & se) !== 0 && e.deps;
+            vn && wr && (e.f & se) !== 0 && e.deps;
           } finally {
             ze = r, m = n;
           }
@@ -1174,7 +1174,7 @@ var require_stdin = __commonJS({
           var i = e, o = i.parent;
           o !== null && (o.f & _e) === 0 && (i.f ^= _e);
         }
-        if (yt) {
+        if (wt) {
           if (Oe.has(e)) return Oe.get(e);
           if (n) {
             i = e;
@@ -1212,7 +1212,7 @@ var require_stdin = __commonJS({
       }
       const ns = /* @__PURE__ */ new Set(), _n = /* @__PURE__ */ new Set();
       let cn = null;
-      function wt(e) {
+      function yt(e) {
         var _a4;
         var t = this, n = t.ownerDocument, r = e.type, s = ((_a4 = e.composedPath) == null ? void 0 : _a4.call(e)) || [], l = s[0] || e.target;
         cn = e;
@@ -1248,15 +1248,15 @@ var require_stdin = __commonJS({
                     ...I
                   ]);
                 } else b.call(l, e);
-              } catch (y) {
-                v ? h.push(y) : v = y;
+              } catch (w) {
+                v ? h.push(w) : v = w;
               }
               if (e.cancelBubble || d === t || d === null) break;
               l = d;
             }
             if (v) {
-              for (let y of h) queueMicrotask(() => {
-                throw y;
+              for (let w of h) queueMicrotask(() => {
+                throw w;
               });
               throw v;
             }
@@ -1289,7 +1289,7 @@ var require_stdin = __commonJS({
         var e = document.createDocumentFragment(), t = document.createComment(""), n = bt();
         return e.append(t, n), Bt(t, n), e;
       }
-      function w(e, t) {
+      function y(e, t) {
         e !== null && e.before(t);
       }
       function Ke(e, t) {
@@ -1308,11 +1308,11 @@ var require_stdin = __commonJS({
             if (!o.has(h)) {
               o.add(h);
               var d = ts(h);
-              t.addEventListener(h, wt, {
+              t.addEventListener(h, yt, {
                 passive: d
               });
               var b = Ge.get(h);
-              b === void 0 ? (document.addEventListener(h, wt, {
+              b === void 0 ? (document.addEventListener(h, yt, {
                 passive: d
               }), Ge.set(h, 1)) : Ge.set(h, b + 1);
             }
@@ -1330,13 +1330,13 @@ var require_stdin = __commonJS({
               var h = ve;
               h.c = l;
             }
-            s && (r.$$events = s), u = e(v, r) || {}, l && yn();
+            s && (r.$$events = s), u = e(v, r) || {}, l && wn();
           }), () => {
             var _a4;
             for (var v of o) {
-              t.removeEventListener(v, wt);
+              t.removeEventListener(v, yt);
               var h = Ge.get(v);
-              --h === 0 ? (document.removeEventListener(v, wt), Ge.delete(v)) : Ge.set(v, h);
+              --h === 0 ? (document.removeEventListener(v, yt), Ge.delete(v)) : Ge.set(v, h);
             }
             _n.delete(a), p !== n && ((_a4 = p.parentNode) == null ? void 0 : _a4.removeChild(p));
           };
@@ -1361,8 +1361,8 @@ var require_stdin = __commonJS({
           if (i !== (i = h)) {
             var b = Fn(), x = r;
             if (b && (c = document.createDocumentFragment(), c.append(x = bt())), i ? s ?? (s = d && ue(() => d(x))) : l ?? (l = d && ue(() => d(x))), b) {
-              var I = k, y = i ? s : l, E = i ? l : s;
-              y && I.skipped_effects.delete(y), E && I.skipped_effects.add(E), I.add_callback(p);
+              var I = k, w = i ? s : l, E = i ? l : s;
+              w && I.skipped_effects.delete(w), E && I.skipped_effects.add(E), I.add_callback(p);
             } else p();
           }
         };
@@ -1378,12 +1378,12 @@ var require_stdin = __commonJS({
         var o = l > 0 && s.length === 0 && n !== null;
         if (o) {
           var a = n.parentNode;
-          Ur(a), a.append(n), r.clear(), we(e, t[0].prev, t[l - 1].next);
+          Ur(a), a.append(n), r.clear(), ye(e, t[0].prev, t[l - 1].next);
         }
         qn(s, () => {
           for (var u = 0; u < l; u++) {
             var c = t[u];
-            o || (r.delete(c.k), we(e, c.prev, c.next)), re(c.e, !o);
+            o || (r.delete(c.k), ye(e, c.prev, c.next)), re(c.e, !o);
           }
         });
       }
@@ -1411,13 +1411,13 @@ var require_stdin = __commonJS({
           var x = h.length;
           if (!(c && x === 0)) {
             c = x === 0;
-            var I, y, E, q;
+            var I, w, E, q;
             if (Fn()) {
               var ie = /* @__PURE__ */ new Set(), Me = k;
-              for (y = 0; y < x; y += 1) {
-                E = h[y], q = r(E, y);
+              for (w = 0; w < x; w += 1) {
+                E = h[w], q = r(E, w);
                 var F = o.items.get(q) ?? p.get(q);
-                F ? Kn(F, E, y) : (I = Gn(null, o, null, null, E, q, y, s, t, n, true), p.set(q, I)), ie.add(q);
+                F ? Kn(F, E, w) : (I = Gn(null, o, null, null, E, q, w, s, t, n, true), p.set(q, I)), ie.add(q);
               }
               for (const [P, A] of o.items) ie.has(P) || Me.skipped_effects.add(A.e);
               Me.add_callback(b);
@@ -1427,19 +1427,19 @@ var require_stdin = __commonJS({
         });
       }
       function os(e, t, n, r, s, l, i, o, a) {
-        var u = t.length, c = n.items, p = n.first, v = p, h, d = null, b = [], x = [], I, y, E, q;
+        var u = t.length, c = n.items, p = n.first, v = p, h, d = null, b = [], x = [], I, w, E, q;
         for (q = 0; q < u; q += 1) {
-          if (I = t[q], y = o(I, q), E = c.get(y), E === void 0) {
-            var ie = r.get(y);
+          if (I = t[q], w = o(I, q), E = c.get(w), E === void 0) {
+            var ie = r.get(w);
             if (ie !== void 0) {
-              r.delete(y), c.set(y, ie);
+              r.delete(w), c.set(w, ie);
               var Me = d ? d.next : v;
-              we(n, d, ie), we(n, ie, Me), Mt(ie, Me, s), d = ie;
+              ye(n, d, ie), ye(n, ie, Me), Mt(ie, Me, s), d = ie;
             } else {
               var F = v ? v.e.nodes_start : s;
-              d = Gn(F, n, d, d === null ? n.first : d.next, I, y, q, l, i, a);
+              d = Gn(F, n, d, d === null ? n.first : d.next, I, w, q, l, i, a);
             }
-            c.set(y, d), b = [], x = [], v = d.next;
+            c.set(w, d), b = [], x = [], v = d.next;
             continue;
           }
           if (Kn(E, I, q), (E.e.f & ce) !== 0 && en(E.e), E !== v) {
@@ -1450,11 +1450,11 @@ var require_stdin = __commonJS({
                 var Te = b[0], ae = b[b.length - 1];
                 for (A = 0; A < b.length; A += 1) Mt(b[A], P, s);
                 for (A = 0; A < x.length; A += 1) h.delete(x[A]);
-                we(n, Te.prev, ae.next), we(n, d, Te), we(n, ae, P), v = P, d = ae, q -= 1, b = [], x = [];
-              } else h.delete(E), Mt(E, v, s), we(n, E.prev, E.next), we(n, E, d === null ? n.first : d.next), we(n, d, E), d = E;
+                ye(n, Te.prev, ae.next), ye(n, d, Te), ye(n, ae, P), v = P, d = ae, q -= 1, b = [], x = [];
+              } else h.delete(E), Mt(E, v, s), ye(n, E.prev, E.next), ye(n, E, d === null ? n.first : d.next), ye(n, d, E), d = E;
               continue;
             }
-            for (b = [], x = []; v !== null && v.k !== y; ) (v.e.f & ce) === 0 && (h ?? (h = /* @__PURE__ */ new Set())).add(v), x.push(v), v = v.next;
+            for (b = [], x = []; v !== null && v.k !== w; ) (v.e.f & ce) === 0 && (h ?? (h = /* @__PURE__ */ new Set())).add(v), x.push(v), v = v.next;
             if (v === null) continue;
             E = v;
           }
@@ -1500,7 +1500,7 @@ var require_stdin = __commonJS({
           s.before(l), l = i;
         }
       }
-      function we(e, t, n) {
+      function ye(e, t, n) {
         t === null ? e.first = n : (t.next = n, t.e.next = n && n.e), n !== null && (n.prev = t, n.e.prev = t && t.e);
       }
       function Xn(e, t, n = false) {
@@ -1648,7 +1648,7 @@ var require_stdin = __commonJS({
               52
             ];
         }
-      }, hs = "/assets/repr_viewer_wasm_bg-CXuzF3ya.wasm", ps = async (e = {}, t) => {
+      }, hs = "/repr-viewer/assets/repr_viewer_wasm_bg-CXuzF3ya.wasm", ps = async (e = {}, t) => {
         let n;
         if (t.startsWith("data:")) {
           const r = t.replace(/^data:.*?base64,/, "");
@@ -1678,7 +1678,7 @@ var require_stdin = __commonJS({
       function Et() {
         return (mt === null || mt.byteLength === 0) && (mt = new Uint8Array(f.memory.buffer)), mt;
       }
-      const gs = typeof TextEncoder > "u" ? (0, module.require)("util").TextEncoder : TextEncoder, St = new gs("utf-8"), ys = typeof St.encodeInto == "function" ? function(e, t) {
+      const gs = typeof TextEncoder > "u" ? (0, module.require)("util").TextEncoder : TextEncoder, St = new gs("utf-8"), ws = typeof St.encodeInto == "function" ? function(e, t) {
         return St.encodeInto(e, t);
       } : function(e, t) {
         const n = St.encode(e);
@@ -1702,7 +1702,7 @@ var require_stdin = __commonJS({
         }
         if (i !== r) {
           i !== 0 && (e = e.slice(i)), s = n(s, r, r = i + e.length * 3, 1) >>> 0;
-          const o = Et().subarray(s + i, s + r), a = ys(e, o);
+          const o = Et().subarray(s + i, s + r), a = ws(e, o);
           i += a.written, s = n(s, r, i, 1) >>> 0;
         }
         return T = i, s;
@@ -1710,7 +1710,7 @@ var require_stdin = __commonJS({
       function le(e, t) {
         return e = e >>> 0, Et().subarray(e / 1, e / 1 + t);
       }
-      function ws(e) {
+      function ys(e) {
         const t = O(e, f.__wbindgen_malloc, f.__wbindgen_realloc), n = T, r = f.to_u8_bytes(t, n);
         var s = le(r[0], r[1]).slice();
         return f.__wbindgen_free(r[0], r[1] * 1, 1), s;
@@ -1857,7 +1857,7 @@ var require_stdin = __commonJS({
       const bl = (e, t) => {
         switch (t) {
           case "u8":
-            return ws(e);
+            return ys(e);
           case "u16":
             return ms(e);
           case "u32":
@@ -1908,7 +1908,7 @@ var require_stdin = __commonJS({
           case "f64":
             return Bs(e).toString();
         }
-      }, yl = (e) => {
+      }, wl = (e) => {
         if (e.length === 0) return null;
         const t = [];
         for (let n of e) for (let r = 0; r < 8; r++) {
@@ -1916,7 +1916,7 @@ var require_stdin = __commonJS({
           t.push(s), n >>>= 1;
         }
         return t.reverse().join("");
-      }, wl = (e, t) => {
+      }, yl = (e, t) => {
         if (e.length === 0 || t === null) return null;
         const n = [], r = [], s = [], l = t[2], i = l + t[1], o = i + t[0];
         let a = 0;
@@ -1937,7 +1937,7 @@ var require_stdin = __commonJS({
       var ml = R("<br/>"), xl = R('<span class="text-6xl leading-20">&nbsp;&nbsp;</span>'), El = R('<span class="text-6xl leading-20">&nbsp;</span>'), Sl = R('<!> <span class="text-6xl leading-20"> </span>', 1), kl = R("<br/>"), Tl = R('<span class="text-6xl leading-20">&nbsp;&nbsp;</span>'), Al = R('<span class="text-6xl leading-20">&nbsp;</span>'), Cl = R('<!> <span class="text-6xl leading-20"> </span>', 1), Nl = R("<br/>"), Rl = R('<span class="text-6xl leading-20">&nbsp;&nbsp;</span>'), Ol = R('<span class="text-6xl leading-20">&nbsp;</span>'), Fl = R('<!> <span class="text-6xl leading-20"> </span>', 1), Pl = R('<span class="border-b-6 border-red-600"></span> <span class="border-b-6 border-yellow-600"></span> <span class="border-b-6 border-lime-600"></span>', 1), Ml = R("<br/>"), Il = R('<span class="text-6xl leading-20">&nbsp;&nbsp;</span>'), Ll = R('<span class="text-6xl leading-20">&nbsp;</span>'), Dl = R('<!> <span class="text-6xl leading-20"> </span>', 1), ql = R('<span class="border-b-6 border-blue-600"></span>'), Ul = R('<p class="text-6xl text-right"> </p>'), jl = R('<option class="bg-(--color-black)"> </option>'), Bl = R('<div class="flex flex-col m-2 items-end"><div class="m-1"><label for="converted" class="text-l">\u5909\u63DB\u5F8C\u306E\u6570\u5024</label> <input type="text" id="converted" readonly="" class="w-160 text-xl text-right border-b"/></div> <div class="m-1"><label for="sign" class="text-l">\u7B26\u53F7\u90E8</label> <input type="text" id="sign" readonly="" class="w-160 text-xl text-right border-b border-red-600"/></div> <div class="m-1"><label for="exp" class="text-l">\u6307\u6570\u90E8</label> <input type="text" id="exp" readonly="" class="w-160 text-xl text-right border-b border-yellow-600"/></div> <div class="m-1"><label for="frac" class="text-l">\u4EEE\u6570\u90E8</label> <input type="text" id="frac" readonly="" class="w-160 text-xl text-right border-b border-lime-600"/></div></div>'), Vl = R('<main><div class="flex flex-col items-center"><h1 class="m-4 text-3xl">Number Representation Viewer</h1> <hr class="m-2 w-9/10 border-double border-xs"/> <div class="m-16"><!></div> <div class="m-3"><label for="ty" class="text-l">\u30C7\u30FC\u30BF\u578B</label> <select id="ty" class="m-3 text-2xl text-center border-b-1"></select> <label for="target-number" class="text-l">\u6570\u5024</label> <input type="text" id="target-number" class="m-3 text-3xl text-right border-b-2"/></div> <!></div></main>');
       function Wl(e, t) {
         gn(t, true);
-        let n = ye("0"), r = ye("u8"), s = Ce(() => ds(_(r))), l = Ce(() => bl(_(n), _(r))), i = Ce(() => yl(_(l))), o = Ce(() => wl(_(l), _(s))), a = Ce(() => gl(_(n), _(r))), u = Ce(() => _(o) && _(o)[0]), c = Ce(() => _(o) && _(o)[1]), p = Ce(() => _(o) && _(o)[2]);
+        let n = we("0"), r = we("u8"), s = Ce(() => ds(_(r))), l = Ce(() => bl(_(n), _(r))), i = Ce(() => wl(_(l))), o = Ce(() => yl(_(l), _(s))), a = Ce(() => gl(_(n), _(r))), u = Ce(() => _(o) && _(o)[0]), c = Ce(() => _(o) && _(o)[1]), p = Ce(() => _(o) && _(o)[2]);
         var v = Vl(), h = W(v), d = D(W(h), 4), b = W(d);
         {
           var x = (F) => {
@@ -1952,38 +1952,38 @@ var require_stdin = __commonJS({
                   {
                     var Ie = (C) => {
                       var B = ml();
-                      w(C, B);
+                      y(C, B);
                     }, ee = (C) => {
                       var B = xe(), te = K(B);
                       {
                         var ge = (N) => {
                           var L = xl();
-                          w(N, L);
+                          y(N, L);
                         }, De = (N) => {
                           var L = xe(), qe = K(L);
                           {
                             var st = (oe) => {
                               var lt = El();
-                              w(oe, lt);
+                              y(oe, lt);
                             };
                             Y(qe, (oe) => {
                               _(M) !== 0 && _(M) % 4 === 0 && oe(st);
                             }, true);
                           }
-                          w(N, L);
+                          y(N, L);
                         };
                         Y(te, (N) => {
                           _(M) !== 0 && _(M) % 8 === 0 ? N(ge) : N(De, false);
                         }, true);
                       }
-                      w(C, B);
+                      y(C, B);
                     };
                     Y(pe, (C) => {
                       _(M) !== 0 && _(M) % 32 === 0 ? C(Ie) : C(ee, false);
                     });
                   }
                   var be = D(pe, 2), Le = W(be);
-                  He(() => Ke(Le, _(i)[_(M)])), w(j, he);
+                  He(() => Ke(Le, _(i)[_(M)])), y(j, he);
                 });
                 var H = D(Ae, 2);
                 at(H, 21, () => [
@@ -1993,38 +1993,38 @@ var require_stdin = __commonJS({
                   {
                     var Ie = (C) => {
                       var B = kl();
-                      w(C, B);
+                      y(C, B);
                     }, ee = (C) => {
                       var B = xe(), te = K(B);
                       {
                         var ge = (N) => {
                           var L = Tl();
-                          w(N, L);
+                          y(N, L);
                         }, De = (N) => {
                           var L = xe(), qe = K(L);
                           {
                             var st = (oe) => {
                               var lt = Al();
-                              w(oe, lt);
+                              y(oe, lt);
                             };
                             Y(qe, (oe) => {
                               (_(M) + _(s)[0]) % 4 === 0 && oe(st);
                             }, true);
                           }
-                          w(N, L);
+                          y(N, L);
                         };
                         Y(te, (N) => {
                           (_(M) + _(s)[0]) % 8 === 0 ? N(ge) : N(De, false);
                         }, true);
                       }
-                      w(C, B);
+                      y(C, B);
                     };
                     Y(pe, (C) => {
                       (_(M) + _(s)[0]) % 32 === 0 ? C(Ie) : C(ee, false);
                     });
                   }
                   var be = D(pe, 2), Le = W(be);
-                  He(() => Ke(Le, _(i)[_(M) + _(s)[0]])), w(j, he);
+                  He(() => Ke(Le, _(i)[_(M) + _(s)[0]])), y(j, he);
                 });
                 var $e = D(H, 2);
                 at($e, 21, () => [
@@ -2034,39 +2034,39 @@ var require_stdin = __commonJS({
                   {
                     var Ie = (C) => {
                       var B = Nl();
-                      w(C, B);
+                      y(C, B);
                     }, ee = (C) => {
                       var B = xe(), te = K(B);
                       {
                         var ge = (N) => {
                           var L = Rl();
-                          w(N, L);
+                          y(N, L);
                         }, De = (N) => {
                           var L = xe(), qe = K(L);
                           {
                             var st = (oe) => {
                               var lt = Ol();
-                              w(oe, lt);
+                              y(oe, lt);
                             };
                             Y(qe, (oe) => {
                               (_(M) + _(s)[0] + _(s)[1]) % 4 === 0 && oe(st);
                             }, true);
                           }
-                          w(N, L);
+                          y(N, L);
                         };
                         Y(te, (N) => {
                           (_(M) + _(s)[0] + _(s)[1]) % 8 === 0 ? N(ge) : N(De, false);
                         }, true);
                       }
-                      w(C, B);
+                      y(C, B);
                     };
                     Y(pe, (C) => {
                       (_(M) + _(s)[0] + _(s)[1]) % 32 === 0 ? C(Ie) : C(ee, false);
                     });
                   }
                   var be = D(pe, 2), Le = W(be);
-                  He(() => Ke(Le, _(i)[_(M) + _(s)[0] + _(s)[1]])), w(j, he);
-                }), w(Q, de);
+                  He(() => Ke(Le, _(i)[_(M) + _(s)[0] + _(s)[1]])), y(j, he);
+                }), y(Q, de);
               }, ae = (Q) => {
                 var de = ql();
                 at(de, 21, () => [
@@ -2076,71 +2076,71 @@ var require_stdin = __commonJS({
                   {
                     var M = (ee) => {
                       var be = Ml();
-                      w(ee, be);
+                      y(ee, be);
                     }, he = (ee) => {
                       var be = xe(), Le = K(be);
                       {
                         var C = (te) => {
                           var ge = Il();
-                          w(te, ge);
+                          y(te, ge);
                         }, B = (te) => {
                           var ge = xe(), De = K(ge);
                           {
                             var N = (L) => {
                               var qe = Ll();
-                              w(L, qe);
+                              y(L, qe);
                             };
                             Y(De, (L) => {
                               _(H) !== 0 && _(H) % 4 === 0 && L(N);
                             }, true);
                           }
-                          w(te, ge);
+                          y(te, ge);
                         };
                         Y(Le, (te) => {
                           _(H) !== 0 && _(H) % 8 === 0 ? te(C) : te(B, false);
                         }, true);
                       }
-                      w(ee, be);
+                      y(ee, be);
                     };
                     Y(j, (ee) => {
                       _(H) !== 0 && _(H) % 32 === 0 ? ee(M) : ee(he, false);
                     });
                   }
                   var pe = D(j, 2), Ie = W(pe);
-                  He(() => Ke(Ie, _(i)[_(H)])), w(Ae, $e);
-                }), w(Q, de);
+                  He(() => Ke(Ie, _(i)[_(H)])), y(Ae, $e);
+                }), y(Q, de);
               };
               Y(A, (Q) => {
                 _(s) !== null ? Q(Te) : Q(ae, false);
               });
             }
-            w(F, P);
+            y(F, P);
           }, I = (F) => {
             var P = Ul(), A = W(P);
-            He(() => Ke(A, _(i) ?? "\u5909\u63DB\u3067\u304D\u307E\u305B\u3093")), w(F, P);
+            He(() => Ke(A, _(i) ?? "\u5909\u63DB\u3067\u304D\u307E\u305B\u3093")), y(F, P);
           };
           Y(b, (F) => {
             _(i) !== null ? F(x) : F(I, false);
           });
         }
-        var y = D(d, 2), E = D(W(y), 2);
+        var w = D(d, 2), E = D(W(w), 2);
         at(E, 21, () => cs, it, (F, P) => {
           var A = jl(), Te = W(A), ae = {};
           He(() => {
             Ke(Te, _(P)), ae !== (ae = _(P)) && (A.value = (A.__value = _(P)) ?? "");
-          }), w(F, A);
+          }), y(F, A);
         });
-        var q = D(E, 4), ie = D(y, 2);
+        var q = D(E, 4), ie = D(w, 2);
         {
           var Me = (F) => {
             var P = Bl(), A = W(P), Te = D(W(A), 2), ae = D(A, 2), Q = D(W(ae), 2), de = D(ae, 2), Ae = D(W(de), 2), H = D(de, 2), $e = D(W(H), 2);
-            ot(Te, () => _(a), (j) => Z(a, j)), ot(Q, () => _(u), (j) => Z(u, j)), ot(Ae, () => _(c), (j) => Z(c, j)), ot($e, () => _(p), (j) => Z(p, j)), w(F, P);
+            ot(Te, () => _(a), (j) => Z(a, j)), ot(Q, () => _(u), (j) => Z(u, j)), ot(Ae, () => _(c), (j) => Z(c, j)), ot($e, () => _(p), (j) => Z(p, j)), y(F, P);
           };
           Y(ie, (F) => {
             vs(_(r)) && F(Me);
           });
         }
-        fs(E, () => _(r), (F) => Z(r, F)), ot(q, () => _(n), (F) => Z(n, F)), w(e, v), yn();
+        fs(E, () => _(r), (F) => Z(r, F)), ot(q, () => _(n), (F) => Z(n, F)), y(e, v), wn();
       }
       ss(Wl, {
         target: document.getElementById("app")
