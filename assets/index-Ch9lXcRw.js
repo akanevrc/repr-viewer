@@ -16,7 +16,7 @@ var __privateMethod = (obj, member, method) => (__accessCheck(obj, member, "acce
 var require_stdin = __commonJS({
   "<stdin>"(exports, module) {
     (async () => {
-      var _s2, _t2, _c, _i, _f, _l2, _n2, _e2, _r2, _a, __, _u, _Ee_instances, v_fn, o_fn, d_fn, _s3, _t3, _c2, _i2, _f2, _l3, _n3, _e3, _r3, _a2, __2, _u2, _v, _o, _d, _m, _Nr_instances, x_fn, b_fn, h_fn, p_fn, g_fn, _a3;
+      var _s2, _t2, _c, _i, _f, _l2, _n2, _e2, _r2, _a, __, _u, _Ee_instances, v_fn, o_fn, d_fn, _s3, _t3, _c2, _i2, _f2, _l3, _n3, _e3, _r3, _a2, __2, _u2, _v, _o, _d, _x, _Nr_instances, m_fn, b_fn, h_fn, p_fn, g_fn, _a3;
       (function() {
         const t = document.createElement("link").relList;
         if (t && t.supports && t.supports("modulepreload")) return;
@@ -89,17 +89,17 @@ var require_stdin = __commonJS({
       function pn(e) {
         return e === this.v;
       }
-      function mr(e, t) {
+      function xr(e, t) {
         return e != e ? t == t : e !== t || e !== null && typeof e == "object" || typeof e == "function";
       }
       function gn(e) {
-        return !mr(e, this.v);
+        return !xr(e, this.v);
       }
-      let xr = false, ve = null;
+      let mr = false, ve = null;
       function ze(e) {
         ve = e;
       }
-      function mn(e, t = false, n) {
+      function xn(e, t = false, n) {
         ve = {
           p: ve,
           c: null,
@@ -109,7 +109,7 @@ var require_stdin = __commonJS({
           l: null
         };
       }
-      function xn(e) {
+      function mn(e) {
         var t = ve, n = t.e;
         if (n !== null) {
           t.e = null;
@@ -147,7 +147,7 @@ var require_stdin = __commonJS({
       const Er = /* @__PURE__ */ new WeakMap();
       function yn(e) {
         var t = w;
-        if (t === null) return m.f |= je, e;
+        if (t === null) return x.f |= je, e;
         if ((t.f & hn) === 0) {
           if ((t.f & $t) === 0) throw !t.parent && e instanceof Error && En(e), e;
           t.b.error(e);
@@ -393,7 +393,7 @@ var require_stdin = __commonJS({
           __privateAdd(this, _d, () => {
             __privateGet(this, _o) && ht(__privateGet(this, _o), __privateGet(this, __2));
           });
-          __privateAdd(this, _m, Tr(() => (__privateSet(this, _o, We(__privateGet(this, __2))), () => {
+          __privateAdd(this, _x, Tr(() => (__privateSet(this, _o, We(__privateGet(this, __2))), () => {
             __privateSet(this, _o, null);
           })));
           __privateSet(this, _t3, t), __privateSet(this, _i2, n), __privateSet(this, _f2, r), this.parent = w.b, __privateSet(this, _s3, !!__privateGet(this, _i2).pending), __privateSet(this, _l3, Jt(() => {
@@ -418,7 +418,7 @@ var require_stdin = __commonJS({
           __privateMethod(this, _Nr_instances, g_fn).call(this, t), __privateSet(this, __2, __privateGet(this, __2) + t), Ut.add(__privateGet(this, _d));
         }
         get_effect_pending() {
-          return __privateGet(this, _m).call(this), _(__privateGet(this, _o));
+          return __privateGet(this, _x).call(this), _(__privateGet(this, _o));
         }
         error(t) {
           var n = __privateGet(this, _i2).onerror;
@@ -435,7 +435,7 @@ var require_stdin = __commonJS({
               __privateSet(this, _r3, null);
             }), __privateSet(this, _s3, this.has_pending_snippet()), __privateSet(this, _n3, __privateMethod(this, _Nr_instances, h_fn).call(this, () => (__privateSet(this, _v, false), ue(() => __privateGet(this, _f2).call(this, __privateGet(this, _t3)))))), __privateGet(this, _u2) > 0 ? __privateMethod(this, _Nr_instances, p_fn).call(this) : __privateSet(this, _s3, false);
           };
-          var o = m;
+          var o = x;
           try {
             G(null), s = true, n == null ? void 0 : n(t, i), s = false;
           } catch (a) {
@@ -474,9 +474,9 @@ var require_stdin = __commonJS({
       _v = new WeakMap();
       _o = new WeakMap();
       _d = new WeakMap();
-      _m = new WeakMap();
+      _x = new WeakMap();
       _Nr_instances = new WeakSet();
-      x_fn = function() {
+      m_fn = function() {
         try {
           __privateSet(this, _n3, ue(() => __privateGet(this, _f2).call(this, __privateGet(this, _t3))));
         } catch (t) {
@@ -493,7 +493,7 @@ var require_stdin = __commonJS({
         }));
       };
       h_fn = function(t) {
-        var n = w, r = m, l = ve;
+        var n = w, r = x, l = ve;
         we(__privateGet(this, _l3)), G(__privateGet(this, _l3)), ze(__privateGet(this, _l3).ctx);
         try {
           return t();
@@ -519,7 +519,7 @@ var require_stdin = __commonJS({
       };
       function Rr(e, t) {
         for (var n = e.nodes_start, r = e.nodes_end; n !== null; ) {
-          var l = n === r ? null : mt(n);
+          var l = n === r ? null : xt(n);
           t.append(n), n = l;
         }
       }
@@ -546,7 +546,7 @@ var require_stdin = __commonJS({
         });
       }
       function Fr() {
-        var e = w, t = m, n = ve, r = k;
+        var e = w, t = x, n = ve, r = k;
         return function() {
           we(e), G(t), ze(n), r == null ? void 0 : r.activate();
         };
@@ -555,7 +555,7 @@ var require_stdin = __commonJS({
         we(null), G(null), ze(null);
       }
       function Xt(e) {
-        var t = J | le, n = m !== null && (m.f & J) !== 0 ? m : null;
+        var t = J | le, n = x !== null && (x.f & J) !== 0 ? x : null;
         return w === null || n !== null && (n.f & _e) !== 0 ? t |= _e : w.f |= tt, {
           ctx: ve,
           deps: null,
@@ -574,7 +574,7 @@ var require_stdin = __commonJS({
       function Pr(e, t) {
         let n = w;
         n === null && lr();
-        var r = n.b, l = void 0, s = We(U), i = null, o = !m;
+        var r = n.b, l = void 0, s = We(U), i = null, o = !x;
         return Kr(() => {
           try {
             var a = e();
@@ -637,7 +637,7 @@ var require_stdin = __commonJS({
       }
       function An(e) {
         var t = zt(e);
-        if (e.equals(t) || (e.v = t, e.wv = Vn()), !xt) {
+        if (e.equals(t) || (e.v = t, e.wv = Vn()), !mt) {
           var n = (Re || (e.f & _e) !== 0) && e.deps !== null ? Pe : V;
           X(e, n);
         }
@@ -654,7 +654,7 @@ var require_stdin = __commonJS({
         };
         return n;
       }
-      function xe(e, t) {
+      function me(e, t) {
         const n = We(e);
         return jn(n), n;
       }
@@ -663,14 +663,14 @@ var require_stdin = __commonJS({
         return t || (r.equals = gn), r;
       }
       function Z(e, t, n = false) {
-        m !== null && (!fe || (m.f & nn) !== 0) && bn() && (m.f & (J | Qe | Ht | nn)) !== 0 && !(Se == null ? void 0 : Se.includes(e)) && or();
+        x !== null && (!fe || (x.f & nn) !== 0) && bn() && (x.f & (J | Qe | Ht | nn)) !== 0 && !(Se == null ? void 0 : Se.includes(e)) && or();
         let r = n ? ut(t) : t;
         return ht(e, r);
       }
       function ht(e, t) {
         if (!e.equals(t)) {
           var n = e.v;
-          xt ? Oe.set(e, t) : Oe.set(e, n), e.v = t;
+          mt ? Oe.set(e, t) : Oe.set(e, n), e.v = t;
           var r = Ee.ensure();
           r.capture(e, n), (e.f & J) !== 0 && ((e.f & le) !== 0 && zt(e), X(e, (e.f & _e) === 0 ? V : Pe)), e.wv = Vn(), Cn(e, le), w !== null && (w.f & V) !== 0 && (w.f & (Fe | Ye)) === 0 && (ne === null ? zr([
             e
@@ -692,19 +692,19 @@ var require_stdin = __commonJS({
         if (typeof e != "object" || e === null || _t in e) return e;
         const t = er(e);
         if (t !== Jn && t !== Qn) return e;
-        var n = /* @__PURE__ */ new Map(), r = Nt(e), l = xe(0), s = Be, i = (o) => {
+        var n = /* @__PURE__ */ new Map(), r = Nt(e), l = me(0), s = Be, i = (o) => {
           if (Be === s) return o();
-          var a = m, u = Be;
+          var a = x, u = Be;
           G(null), fn(s);
           var c = o();
           return G(a), fn(u), c;
         };
-        return r && n.set("length", xe(e.length)), new Proxy(e, {
+        return r && n.set("length", me(e.length)), new Proxy(e, {
           defineProperty(o, a, u) {
             (!("value" in u) || u.configurable === false || u.enumerable === false || u.writable === false) && ir();
             var c = n.get(a);
             return c === void 0 ? c = i(() => {
-              var p = xe(u.value);
+              var p = me(u.value);
               return n.set(a, p), p;
             }) : Z(c, u.value, true), true;
           },
@@ -712,7 +712,7 @@ var require_stdin = __commonJS({
             var u = n.get(a);
             if (u === void 0) {
               if (a in o) {
-                const c = i(() => xe(U));
+                const c = i(() => me(U));
                 n.set(a, c), vt(l);
               }
             } else Z(u, U), vt(l);
@@ -723,7 +723,7 @@ var require_stdin = __commonJS({
             if (a === _t) return e;
             var c = n.get(a), p = a in o;
             if (c === void 0 && (!p || ((_a4 = ft(o, a)) == null ? void 0 : _a4.writable)) && (c = i(() => {
-              var h = ut(p ? o[a] : U), d = xe(h);
+              var h = ut(p ? o[a] : U), d = me(h);
               return d;
             }), n.set(a, c)), c !== void 0) {
               var v = _(c);
@@ -753,7 +753,7 @@ var require_stdin = __commonJS({
             var u = n.get(a), c = u !== void 0 && u.v !== U || Reflect.has(o, a);
             if (u !== void 0 || w !== null && (!c || ((_a4 = ft(o, a)) == null ? void 0 : _a4.writable))) {
               u === void 0 && (u = i(() => {
-                var v = c ? ut(o[a]) : U, h = xe(v);
+                var v = c ? ut(o[a]) : U, h = me(v);
                 return h;
               }), n.set(a, u));
               var p = _(u);
@@ -766,9 +766,9 @@ var require_stdin = __commonJS({
             var p = n.get(a), v = a in o;
             if (r && a === "length") for (var h = u; h < p.v; h += 1) {
               var d = n.get(h + "");
-              d !== void 0 ? Z(d, U) : h in o && (d = i(() => xe(U)), n.set(h + "", d));
+              d !== void 0 ? Z(d, U) : h in o && (d = i(() => me(U)), n.set(h + "", d));
             }
-            if (p === void 0) (!v || ((_a4 = ft(o, a)) == null ? void 0 : _a4.writable)) && (p = i(() => xe(void 0)), Z(p, ut(u)), n.set(a, p));
+            if (p === void 0) (!v || ((_a4 = ft(o, a)) == null ? void 0 : _a4.writable)) && (p = i(() => me(void 0)), Z(p, ut(u)), n.set(a, p));
             else {
               v = p.v !== U;
               var g = i(() => ut(u));
@@ -777,8 +777,8 @@ var require_stdin = __commonJS({
             var y = Reflect.getOwnPropertyDescriptor(o, a);
             if ((y == null ? void 0 : y.set) && y.set.call(c, u), !v) {
               if (r && typeof a == "string") {
-                var M = n.get("length"), x = Number(a);
-                Number.isInteger(x) && x >= M.v && Z(M, x + 1);
+                var M = n.get("length"), m = Number(a);
+                Number.isInteger(m) && m >= M.v && Z(M, m + 1);
               }
               vt(l);
             }
@@ -822,7 +822,7 @@ var require_stdin = __commonJS({
       function At(e) {
         return Rn.call(e);
       }
-      function mt(e) {
+      function xt(e) {
         return On.call(e);
       }
       function H(e, t) {
@@ -831,12 +831,12 @@ var require_stdin = __commonJS({
       function K(e, t = false) {
         {
           var n = At(e);
-          return n instanceof Comment && n.data === "" ? mt(n) : n;
+          return n instanceof Comment && n.data === "" ? xt(n) : n;
         }
       }
       function D(e, t = 1, n = false) {
         let r = e;
-        for (; t--; ) r = mt(r);
+        for (; t--; ) r = xt(r);
         return r;
       }
       function Ur(e) {
@@ -857,7 +857,7 @@ var require_stdin = __commonJS({
         }));
       }
       function Zt(e) {
-        var t = m, n = w;
+        var t = x, n = w;
         G(null), we(null);
         try {
           return e();
@@ -905,15 +905,15 @@ var require_stdin = __commonJS({
         else t !== null && Je(s);
         if (r) {
           var i = s;
-          if (n && i.deps === null && i.teardown === null && i.nodes_start === null && i.first === i.last && (i.f & tt) === 0 && (i = i.first), i !== null && (i.parent = l, l !== null && Br(i, l), m !== null && (m.f & J) !== 0 && (e & Ye) === 0)) {
-            var o = m;
+          if (n && i.deps === null && i.teardown === null && i.nodes_start === null && i.first === i.last && (i.f & tt) === 0 && (i = i.first), i !== null && (i.parent = l, l !== null && Br(i, l), x !== null && (x.f & J) !== 0 && (e & Ye) === 0)) {
+            var o = x;
             (o.effects ?? (o.effects = [])).push(i);
           }
         }
         return s;
       }
       function Vr() {
-        return m !== null && !fe;
+        return x !== null && !fe;
       }
       function Wr(e) {
         const t = ke(Yt, null, false);
@@ -955,7 +955,7 @@ var require_stdin = __commonJS({
       function In(e) {
         var t = e.teardown;
         if (t !== null) {
-          const n = xt, r = m;
+          const n = mt, r = x;
           un(true), G(null);
           try {
             t.call(null);
@@ -992,7 +992,7 @@ var require_stdin = __commonJS({
       }
       function Xr(e, t) {
         for (; e !== null; ) {
-          var n = e === t ? null : mt(e);
+          var n = e === t ? null : xt(e);
           e.remove(), e = n;
         }
       }
@@ -1039,13 +1039,13 @@ var require_stdin = __commonJS({
       function on(e) {
         Ge = e;
       }
-      let xt = false;
+      let mt = false;
       function un(e) {
-        xt = e;
+        mt = e;
       }
-      let m = null, fe = false;
+      let x = null, fe = false;
       function G(e) {
-        m = e;
+        x = e;
       }
       let w = null;
       function we(e) {
@@ -1053,7 +1053,7 @@ var require_stdin = __commonJS({
       }
       let Se = null;
       function jn(e) {
-        m !== null && (Se === null ? Se = [
+        x !== null && (Se === null ? Se = [
           e
         ] : Se.push(e));
       }
@@ -1097,8 +1097,8 @@ var require_stdin = __commonJS({
       }
       function Yn(e) {
         var _a4;
-        var t = Y, n = z, r = ne, l = m, s = Re, i = Se, o = ve, a = fe, u = Be, c = e.f;
-        Y = null, z = 0, ne = null, Re = (c & _e) !== 0 && (fe || !Ge || m === null), m = (c & (Fe | Ye)) === 0 ? e : null, Se = null, ze(e.ctx), fe = false, Be = ++pt, e.ac !== null && (Zt(() => {
+        var t = Y, n = z, r = ne, l = x, s = Re, i = Se, o = ve, a = fe, u = Be, c = e.f;
+        Y = null, z = 0, ne = null, Re = (c & _e) !== 0 && (fe || !Ge || x === null), x = (c & (Fe | Ye)) === 0 ? e : null, Se = null, ze(e.ctx), fe = false, Be = ++pt, e.ac !== null && (Zt(() => {
           e.ac.abort(Kt);
         }), e.ac = null);
         try {
@@ -1115,7 +1115,7 @@ var require_stdin = __commonJS({
         } catch (g) {
           return yn(g);
         } finally {
-          e.f ^= qt, Y = t, z = n, ne = r, m = l, Re = s, Se = i, ze(o), fe = a, Be = u;
+          e.f ^= qt, Y = t, z = n, ne = r, x = l, Re = s, Se = i, ze(o), fe = a, Be = u;
         }
       }
       function Zr(e, t) {
@@ -1144,7 +1144,7 @@ var require_stdin = __commonJS({
             var l = Yn(e);
             e.teardown = typeof l == "function" ? l : null, e.wv = Bn;
             var s;
-            vn && xr && (e.f & le) !== 0 && e.deps;
+            vn && mr && (e.f & le) !== 0 && e.deps;
           } finally {
             Ge = r, w = n;
           }
@@ -1155,26 +1155,26 @@ var require_stdin = __commonJS({
       }
       function _(e) {
         var t = e.f, n = (t & J) !== 0;
-        if (m !== null && !fe) {
+        if (x !== null && !fe) {
           var r = w !== null && (w.f & et) !== 0;
           if (!r && !(Se == null ? void 0 : Se.includes(e))) {
-            var l = m.deps;
-            if ((m.f & qt) !== 0) e.rv < pt && (e.rv = pt, Y === null && l !== null && l[z] === e ? z++ : Y === null ? Y = [
+            var l = x.deps;
+            if ((x.f & qt) !== 0) e.rv < pt && (e.rv = pt, Y === null && l !== null && l[z] === e ? z++ : Y === null ? Y = [
               e
             ] : (!Re || !Y.includes(e)) && Y.push(e));
             else {
-              (m.deps ?? (m.deps = [])).push(e);
+              (x.deps ?? (x.deps = [])).push(e);
               var s = e.reactions;
               s === null ? e.reactions = [
-                m
-              ] : s.includes(m) || s.push(m);
+                x
+              ] : s.includes(x) || s.push(x);
             }
           }
         } else if (n && e.deps === null && e.effects === null) {
           var i = e, o = i.parent;
           o !== null && (o.f & _e) === 0 && (i.f ^= _e);
         }
-        if (xt) {
+        if (mt) {
           if (Oe.has(e)) return Oe.get(e);
           if (n) {
             i = e;
@@ -1234,7 +1234,7 @@ var require_stdin = __commonJS({
               return s || n;
             }
           });
-          var c = m, p = w;
+          var c = x, p = w;
           G(null), we(null);
           try {
             for (var v, h = []; s !== null; ) {
@@ -1248,15 +1248,15 @@ var require_stdin = __commonJS({
                     ...M
                   ]);
                 } else g.call(s, e);
-              } catch (x) {
-                v ? h.push(x) : v = x;
+              } catch (m) {
+                v ? h.push(m) : v = m;
               }
               if (e.cancelBubble || d === t || d === null) break;
               s = d;
             }
             if (v) {
-              for (let x of h) queueMicrotask(() => {
-                throw x;
+              for (let m of h) queueMicrotask(() => {
+                throw m;
               });
               throw v;
             }
@@ -1326,11 +1326,11 @@ var require_stdin = __commonJS({
             }
           }, (v) => {
             if (s) {
-              mn({});
+              xn({});
               var h = ve;
               h.c = s;
             }
-            l && (r.$$events = l), u = e(v, r) || {}, s && xn();
+            l && (r.$$events = l), u = e(v, r) || {}, s && mn();
           }), () => {
             var _a4;
             for (var v of o) {
@@ -1361,8 +1361,8 @@ var require_stdin = __commonJS({
           if (i !== (i = h)) {
             var g = Fn(), y = r;
             if (g && (c = document.createDocumentFragment(), c.append(y = gt())), i ? l ?? (l = d && ue(() => d(y))) : s ?? (s = d && ue(() => d(y))), g) {
-              var M = k, x = i ? l : s, E = i ? s : l;
-              x && M.skipped_effects.delete(x), E && M.skipped_effects.add(E), M.add_callback(p);
+              var M = k, m = i ? l : s, E = i ? s : l;
+              m && M.skipped_effects.delete(m), E && M.skipped_effects.add(E), M.add_callback(p);
             } else p();
           }
         };
@@ -1411,13 +1411,13 @@ var require_stdin = __commonJS({
           var y = h.length;
           if (!(c && y === 0)) {
             c = y === 0;
-            var M, x, E, q;
+            var M, m, E, q;
             if (Fn()) {
               var ie = /* @__PURE__ */ new Set(), Me = k;
-              for (x = 0; x < y; x += 1) {
-                E = h[x], q = r(E, x);
+              for (m = 0; m < y; m += 1) {
+                E = h[m], q = r(E, m);
                 var O = o.items.get(q) ?? p.get(q);
-                O ? Kn(O, E, x) : (M = Gn(null, o, null, null, E, q, x, l, t, n, true), p.set(q, M)), ie.add(q);
+                O ? Kn(O, E, m) : (M = Gn(null, o, null, null, E, q, m, l, t, n, true), p.set(q, M)), ie.add(q);
               }
               for (const [I, F] of o.items) ie.has(I) || Me.skipped_effects.add(F.e);
               Me.add_callback(g);
@@ -1427,19 +1427,19 @@ var require_stdin = __commonJS({
         });
       }
       function ol(e, t, n, r, l, s, i, o, a) {
-        var u = t.length, c = n.items, p = n.first, v = p, h, d = null, g = [], y = [], M, x, E, q;
+        var u = t.length, c = n.items, p = n.first, v = p, h, d = null, g = [], y = [], M, m, E, q;
         for (q = 0; q < u; q += 1) {
-          if (M = t[q], x = o(M, q), E = c.get(x), E === void 0) {
-            var ie = r.get(x);
+          if (M = t[q], m = o(M, q), E = c.get(m), E === void 0) {
+            var ie = r.get(m);
             if (ie !== void 0) {
-              r.delete(x), c.set(x, ie);
+              r.delete(m), c.set(m, ie);
               var Me = d ? d.next : v;
               be(n, d, ie), be(n, ie, Me), Mt(ie, Me, l), d = ie;
             } else {
               var O = v ? v.e.nodes_start : l;
-              d = Gn(O, n, d, d === null ? n.first : d.next, M, x, q, s, i, a);
+              d = Gn(O, n, d, d === null ? n.first : d.next, M, m, q, s, i, a);
             }
-            c.set(x, d), g = [], y = [], v = d.next;
+            c.set(m, d), g = [], y = [], v = d.next;
             continue;
           }
           if (Kn(E, M, q), (E.e.f & ce) !== 0 && en(E.e), E !== v) {
@@ -1454,7 +1454,7 @@ var require_stdin = __commonJS({
               } else h.delete(E), Mt(E, v, l), be(n, E.prev, E.next), be(n, E, d === null ? n.first : d.next), be(n, d, E), d = E;
               continue;
             }
-            for (g = [], y = []; v !== null && v.k !== x; ) (v.e.f & ce) === 0 && (h ?? (h = /* @__PURE__ */ new Set())).add(v), y.push(v), v = v.next;
+            for (g = [], y = []; v !== null && v.k !== m; ) (v.e.f & ce) === 0 && (h ?? (h = /* @__PURE__ */ new Set())).add(v), y.push(v), v = v.next;
             if (v === null) continue;
             E = v;
           }
@@ -1496,7 +1496,7 @@ var require_stdin = __commonJS({
       }
       function Mt(e, t, n) {
         for (var r = e.next ? e.next.e.nodes_start : n, l = t ? t.e.nodes_start : n, s = e.e.nodes_start; s !== null && s !== r; ) {
-          var i = mt(s);
+          var i = xt(s);
           l.before(s), s = i;
         }
       }
@@ -1678,7 +1678,7 @@ var require_stdin = __commonJS({
       function Et() {
         return (wt === null || wt.byteLength === 0) && (wt = new Uint8Array(f.memory.buffer)), wt;
       }
-      const ml = typeof TextEncoder > "u" ? (0, module.require)("util").TextEncoder : TextEncoder, St = new ml("utf-8"), xl = typeof St.encodeInto == "function" ? function(e, t) {
+      const xl = typeof TextEncoder > "u" ? (0, module.require)("util").TextEncoder : TextEncoder, St = new xl("utf-8"), ml = typeof St.encodeInto == "function" ? function(e, t) {
         return St.encodeInto(e, t);
       } : function(e, t) {
         const n = St.encode(e);
@@ -1702,7 +1702,7 @@ var require_stdin = __commonJS({
         }
         if (i !== r) {
           i !== 0 && (e = e.slice(i)), l = n(l, r, r = i + e.length * 3, 1) >>> 0;
-          const o = Et().subarray(l + i, l + r), a = xl(e, o);
+          const o = Et().subarray(l + i, l + r), a = ml(e, o);
           i += a.written, l = n(l, r, i, 1) >>> 0;
         }
         return T = i, l;
@@ -1881,7 +1881,7 @@ var require_stdin = __commonJS({
           case "f64":
             return Ol(e);
         }
-      }, ms = (e, t) => {
+      }, xs = (e, t) => {
         switch (t) {
           case "u8":
             return Fl(e).toString();
@@ -1908,7 +1908,7 @@ var require_stdin = __commonJS({
           case "f64":
             return Bl(e).toString();
         }
-      }, xs = (e) => {
+      }, ms = (e) => {
         if (e.length === 0) return null;
         const t = [];
         for (let n of e) for (let r = 0; r < 8; r++) {
@@ -1934,10 +1934,10 @@ var require_stdin = __commonJS({
           l.reverse().join("")
         ];
       };
-      var ws = N("<br/>"), ys = N('<span class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20">&nbsp;&nbsp;</span>'), Es = N('<span class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20">&nbsp;</span>'), Ss = N('<!> <span class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"> </span>', 1), ks = N("<br/>"), Ts = N('<span class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20">&nbsp;&nbsp;</span>'), As = N('<span class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20">&nbsp;</span>'), Cs = N('<!> <span class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"> </span>', 1), Ns = N("<br/>"), Rs = N('<span class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20">&nbsp;&nbsp;</span>'), Os = N('<span class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20">&nbsp;</span>'), Fs = N('<!> <span class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"> </span>', 1), Ps = N('<span class="border-b-6 border-red-600"></span> <span class="border-b-6 border-yellow-600"></span> <span class="border-b-6 border-lime-600"></span>', 1), Ms = N("<br/>"), Is = N('<span class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20">&nbsp;&nbsp;</span>'), Ls = N('<span class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20">&nbsp;</span>'), Ds = N('<!> <span class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"> </span>', 1), qs = N('<span class="border-b-6 border-blue-600"></span>'), Us = N('<p class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">\u6570\u5024\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044</p>'), js = N('<option class="bg-(--color-black)"> </option>'), Bs = N('<div class="flex flex-col m-2 items-end"><div class="m-1"><label for="converted" class="sm:text-sm md:text-md lg:text-lg xl:text-xl">\u5909\u63DB\u5F8C\u306E\u6570\u5024</label> <input type="text" id="converted" readonly="" class="sm:w-100 md:w-120 lg:w-140 xl:w-160 sm:text-sm md:text-md lg:text-lg xl:text-xl text-right border-b"/></div> <div class="m-1"><label for="sign" class="sm:text-sm md:text-md lg:text-lg xl:text-xl">\u7B26\u53F7\u90E8</label> <input type="text" id="sign" readonly="" class="sm:w-100 md:w-120 lg:w-140 xl:w-160 sm:text-sm md:text-md lg:text-lg xl:text-xl text-right border-b border-red-600"/></div> <div class="m-1"><label for="exp" class="sm:text-sm md:text-md lg:text-lg xl:text-xl">\u6307\u6570\u90E8</label> <input type="text" id="exp" readonly="" class="sm:w-100 md:w-120 lg:w-140 xl:w-160 sm:text-sm md:text-md lg:text-lg xl:text-xl text-right border-b border-yellow-600"/></div> <div class="m-1"><label for="frac" class="sm:text-sm md:text-md lg:text-lg xl:text-xl">\u4EEE\u6570\u90E8</label> <input type="text" id="frac" readonly="" class="sm:w-100 md:w-120 lg:w-140 xl:w-160 sm:text-sm md:text-md lg:text-lg xl:text-xl text-right border-b border-lime-600"/></div></div>'), Vs = N('<main><div class="flex flex-col items-center"><h1 class="m-4 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Number Representation Viewer</h1> <hr class="m-2 w-9/10 border-double border-xs"/> <div class="m-12"><!></div> <div class="m-3"><label for="ty" class="sm:text-sm md:text-md lg:text-lg xl:text-xl">\u30C7\u30FC\u30BF\u578B</label> <select id="ty" class="m-3 sm:text-md md:text-lg lg:text-xl xl:text-2xl text-center border-b-1"></select> <label for="target-number" class="sm:text-sm md:text-md lg:text-lg xl:text-xl">\u6570\u5024</label> <input type="text" id="target-number" class="m-3 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-right border-b-2"/></div> <!></div></main>');
+      var ws = N("<br/>"), ys = N('<span class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20">&nbsp;&nbsp;</span>'), Es = N('<span class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20">&nbsp;</span>'), Ss = N('<!> <span class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"> </span>', 1), ks = N("<br/>"), Ts = N('<span class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20">&nbsp;&nbsp;</span>'), As = N('<span class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20">&nbsp;</span>'), Cs = N('<!> <span class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"> </span>', 1), Ns = N("<br/>"), Rs = N('<span class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20">&nbsp;&nbsp;</span>'), Os = N('<span class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20">&nbsp;</span>'), Fs = N('<!> <span class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"> </span>', 1), Ps = N('<span class="border-b-6 border-red-600"></span> <span class="border-b-6 border-yellow-600"></span> <span class="border-b-6 border-lime-600"></span>', 1), Ms = N("<br/>"), Is = N('<span class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20">&nbsp;&nbsp;</span>'), Ls = N('<span class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20">&nbsp;</span>'), Ds = N('<!> <span class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"> </span>', 1), qs = N('<span class="border-b-6 border-blue-600"></span>'), Us = N('<p class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">\u6570\u5024\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044</p>'), js = N('<option class="bg-(--color-black)"> </option>'), Bs = N('<div class="flex flex-col m-2 items-end"><div class="m-1"><label for="converted" class="text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl">\u5909\u63DB\u5F8C\u306E\u6570\u5024</label> <input type="text" id="converted" readonly="" class="w-80 sm:w-100 md:w-120 lg:w-140 xl:w-160 text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl text-right border-b"/></div> <div class="m-1"><label for="sign" class="text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl">\u7B26\u53F7\u90E8</label> <input type="text" id="sign" readonly="" class="w-80 sm:w-100 md:w-120 lg:w-140 xl:w-160 text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl text-right border-b border-red-600"/></div> <div class="m-1"><label for="exp" class="text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl">\u6307\u6570\u90E8</label> <input type="text" id="exp" readonly="" class="w-80 sm:w-100 md:w-120 lg:w-140 xl:w-160 text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl text-right border-b border-yellow-600"/></div> <div class="m-1"><label for="frac" class="text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl">\u4EEE\u6570\u90E8</label> <input type="text" id="frac" readonly="" class="w-80 sm:w-100 md:w-120 lg:w-140 xl:w-160 text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl text-right border-b border-lime-600"/></div></div>'), Vs = N('<main><div class="flex flex-col items-center"><h1 class="m-4 text:md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Number Representation Viewer</h1> <hr class="m-2 w-9/10 border-double border-xs"/> <div class="m-12"><!></div> <div class="m-3"><label for="ty" class="text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl">\u30C7\u30FC\u30BF\u578B</label> <select id="ty" class="m-3 text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl text-center border-b-1"></select> <label for="target-number" class="text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl">\u6570\u5024</label> <input type="text" id="target-number" class="m-3 w-25 sm:w-40 md:w-55 lg:w-70 xl:w-85 text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-right border-b-2"/></div> <!></div></main>');
       function Ws(e, t) {
-        mn(t, true);
-        let n = xe("0"), r = xe("u8"), l = Ce(() => dl(_(r))), s = Ce(() => gs(_(n), _(r))), i = Ce(() => xs(_(s))), o = Ce(() => bs(_(s), _(l))), a = Ce(() => ms(_(n), _(r))), u = Ce(() => _(o) && _(o)[0]), c = Ce(() => _(o) && _(o)[1]), p = Ce(() => _(o) && _(o)[2]);
+        xn(t, true);
+        let n = me("0"), r = me("u8"), l = Ce(() => dl(_(r))), s = Ce(() => gs(_(n), _(r))), i = Ce(() => ms(_(s))), o = Ce(() => bs(_(s), _(l))), a = Ce(() => xs(_(n), _(r))), u = Ce(() => _(o) && _(o)[0]), c = Ce(() => _(o) && _(o)[1]), p = Ce(() => _(o) && _(o)[2]);
         var v = Vs(), h = H(v), d = D(H(h), 4), g = H(d);
         {
           var y = (O) => {
@@ -1956,7 +1956,7 @@ var require_stdin = __commonJS({
                     }, ee = (A) => {
                       var B = ye(), te = K(B);
                       {
-                        var me = (C) => {
+                        var xe = (C) => {
                           var L = ys();
                           b(C, L);
                         }, De = (C) => {
@@ -1973,7 +1973,7 @@ var require_stdin = __commonJS({
                           b(C, L);
                         };
                         W(te, (C) => {
-                          _(P) !== 0 && _(P) % 8 === 0 ? C(me) : C(De, false);
+                          _(P) !== 0 && _(P) % 8 === 0 ? C(xe) : C(De, false);
                         }, true);
                       }
                       b(A, B);
@@ -1997,7 +1997,7 @@ var require_stdin = __commonJS({
                     }, ee = (A) => {
                       var B = ye(), te = K(B);
                       {
-                        var me = (C) => {
+                        var xe = (C) => {
                           var L = Ts();
                           b(C, L);
                         }, De = (C) => {
@@ -2014,7 +2014,7 @@ var require_stdin = __commonJS({
                           b(C, L);
                         };
                         W(te, (C) => {
-                          (_(P) + _(l)[0]) % 8 === 0 ? C(me) : C(De, false);
+                          (_(P) + _(l)[0]) % 8 === 0 ? C(xe) : C(De, false);
                         }, true);
                       }
                       b(A, B);
@@ -2038,7 +2038,7 @@ var require_stdin = __commonJS({
                     }, ee = (A) => {
                       var B = ye(), te = K(B);
                       {
-                        var me = (C) => {
+                        var xe = (C) => {
                           var L = Rs();
                           b(C, L);
                         }, De = (C) => {
@@ -2055,7 +2055,7 @@ var require_stdin = __commonJS({
                           b(C, L);
                         };
                         W(te, (C) => {
-                          (_(P) + _(l)[0] + _(l)[1]) % 8 === 0 ? C(me) : C(De, false);
+                          (_(P) + _(l)[0] + _(l)[1]) % 8 === 0 ? C(xe) : C(De, false);
                         }, true);
                       }
                       b(A, B);
@@ -2081,10 +2081,10 @@ var require_stdin = __commonJS({
                       var ge = ye(), Le = K(ge);
                       {
                         var A = (te) => {
-                          var me = Is();
-                          b(te, me);
+                          var xe = Is();
+                          b(te, xe);
                         }, B = (te) => {
-                          var me = ye(), De = K(me);
+                          var xe = ye(), De = K(xe);
                           {
                             var C = (L) => {
                               var qe = Ls();
@@ -2094,7 +2094,7 @@ var require_stdin = __commonJS({
                               _($) !== 0 && _($) % 4 === 0 && L(C);
                             }, true);
                           }
-                          b(te, me);
+                          b(te, xe);
                         };
                         W(Le, (te) => {
                           _($) !== 0 && _($) % 8 === 0 ? te(A) : te(B, false);
@@ -2123,14 +2123,14 @@ var require_stdin = __commonJS({
             _(i) !== null ? O(y) : O(M, false);
           });
         }
-        var x = D(d, 2), E = D(H(x), 2);
+        var m = D(d, 2), E = D(H(m), 2);
         at(E, 21, () => cl, it, (O, I) => {
           var F = js(), Te = H(F), ae = {};
           lt(() => {
             st(Te, _(I)), ae !== (ae = _(I)) && (F.value = (F.__value = _(I)) ?? "");
           }), b(O, F);
         });
-        var q = D(E, 4), ie = D(x, 2);
+        var q = D(E, 4), ie = D(m, 2);
         {
           var Me = (O) => {
             var I = Bs(), F = H(I), Te = D(H(F), 2), ae = D(F, 2), Q = D(H(ae), 2), de = D(ae, 2), Ae = D(H(de), 2), $ = D(de, 2), $e = D(H($), 2);
@@ -2140,7 +2140,7 @@ var require_stdin = __commonJS({
             vl(_(r)) && O(Me);
           });
         }
-        fl(E, () => _(r), (O) => Z(r, O)), ot(q, () => _(n), (O) => Z(n, O)), b(e, v), xn();
+        fl(E, () => _(r), (O) => Z(r, O)), ot(q, () => _(n), (O) => Z(n, O)), b(e, v), mn();
       }
       ll(Ws, {
         target: document.getElementById("app")
