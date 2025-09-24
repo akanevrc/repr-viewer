@@ -17,7 +17,7 @@
 
 <main>
   <div class="flex flex-col items-center">
-    <h1 class="m-4 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+    <h1 class="m-4 text:md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
       Number Representation Viewer
     </h1>
     <hr class="m-2 w-9/10 border-double border-xs" />
@@ -30,17 +30,17 @@
                 <br />
               {:else if i !== 0 && i % 8 === 0}
                 <span
-                  class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
+                  class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
                   >&nbsp;&nbsp;</span
                 >
               {:else if i !== 0 && i % 4 === 0}
                 <span
-                  class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
+                  class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
                   >&nbsp;</span
                 >
               {/if}
               <span
-                class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
+                class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
                 >{repr[i]}</span
               >
             {/each}
@@ -51,17 +51,17 @@
                 <br />
               {:else if (i + sizes[0]) % 8 === 0}
                 <span
-                  class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
+                  class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
                   >&nbsp;&nbsp;</span
                 >
               {:else if (i + sizes[0]) % 4 === 0}
                 <span
-                  class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
+                  class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
                   >&nbsp;</span
                 >
               {/if}
               <span
-                class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
+                class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
                 >{repr[i + sizes[0]]}</span
               >
             {/each}
@@ -72,17 +72,17 @@
                 <br />
               {:else if (i + sizes[0] + sizes[1]) % 8 === 0}
                 <span
-                  class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
+                  class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
                   >&nbsp;&nbsp;</span
                 >
               {:else if (i + sizes[0] + sizes[1]) % 4 === 0}
                 <span
-                  class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
+                  class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
                   >&nbsp;</span
                 >
               {/if}
               <span
-                class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
+                class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
                 >{repr[i + sizes[0] + sizes[1]]}</span
               >
             {/each}
@@ -94,35 +94,37 @@
                 <br />
               {:else if i !== 0 && i % 8 === 0}
                 <span
-                  class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
+                  class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
                   >&nbsp;&nbsp;</span
                 >
               {:else if i !== 0 && i % 4 === 0}
                 <span
-                  class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
+                  class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
                   >&nbsp;</span
                 >
               {/if}
               <span
-                class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
+                class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-8 sm:leading-11 md:leading-14 lg:leading-17 xl:leading-20"
                 >{repr[i]}</span
               >
             {/each}
           </span>
         {/if}
       {:else}
-        <p class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+        <p class="text:xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
           数値を入力してください
         </p>
       {/if}
     </div>
     <div class="m-3">
-      <label for="ty" class="sm:text-sm md:text-md lg:text-lg xl:text-xl"
+      <label
+        for="ty"
+        class="text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl"
         >データ型</label
       >
       <select
         id="ty"
-        class="m-3 sm:text-md md:text-lg lg:text-xl xl:text-2xl text-center border-b-1"
+        class="m-3 text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl text-center border-b-1"
         bind:value={ty}
       >
         {#each tys as t}
@@ -131,12 +133,12 @@
       </select>
       <label
         for="target-number"
-        class="sm:text-sm md:text-md lg:text-lg xl:text-xl">数値</label
+        class="text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl">数値</label
       >
       <input
         type="text"
         id="target-number"
-        class="m-3 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-right border-b-2"
+        class="m-3 w-25 sm:w-40 md:w-55 lg:w-70 xl:w-85 text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-right border-b-2"
         bind:value={number}
       />
     </div>
@@ -145,50 +147,56 @@
         <div class="m-1">
           <label
             for="converted"
-            class="sm:text-sm md:text-md lg:text-lg xl:text-xl"
+            class="text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl"
             >変換後の数値</label
           >
           <input
             type="text"
             id="converted"
             readonly
-            class="sm:w-100 md:w-120 lg:w-140 xl:w-160 sm:text-sm md:text-md lg:text-lg xl:text-xl text-right border-b"
+            class="w-80 sm:w-100 md:w-120 lg:w-140 xl:w-160 text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl text-right border-b"
             bind:value={converted}
           />
         </div>
         <div class="m-1">
-          <label for="sign" class="sm:text-sm md:text-md lg:text-lg xl:text-xl"
+          <label
+            for="sign"
+            class="text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl"
             >符号部</label
           >
           <input
             type="text"
             id="sign"
             readonly
-            class="sm:w-100 md:w-120 lg:w-140 xl:w-160 sm:text-sm md:text-md lg:text-lg xl:text-xl text-right border-b border-red-600"
+            class="w-80 sm:w-100 md:w-120 lg:w-140 xl:w-160 text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl text-right border-b border-red-600"
             bind:value={sign}
           />
         </div>
         <div class="m-1">
-          <label for="exp" class="sm:text-sm md:text-md lg:text-lg xl:text-xl"
+          <label
+            for="exp"
+            class="text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl"
             >指数部</label
           >
           <input
             type="text"
             id="exp"
             readonly
-            class="sm:w-100 md:w-120 lg:w-140 xl:w-160 sm:text-sm md:text-md lg:text-lg xl:text-xl text-right border-b border-yellow-600"
+            class="w-80 sm:w-100 md:w-120 lg:w-140 xl:w-160 text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl text-right border-b border-yellow-600"
             bind:value={exp}
           />
         </div>
         <div class="m-1">
-          <label for="frac" class="sm:text-sm md:text-md lg:text-lg xl:text-xl"
+          <label
+            for="frac"
+            class="text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl"
             >仮数部</label
           >
           <input
             type="text"
             id="frac"
             readonly
-            class="sm:w-100 md:w-120 lg:w-140 xl:w-160 sm:text-sm md:text-md lg:text-lg xl:text-xl text-right border-b border-lime-600"
+            class="w-80 sm:w-100 md:w-120 lg:w-140 xl:w-160 text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl text-right border-b border-lime-600"
             bind:value={frac}
           />
         </div>
